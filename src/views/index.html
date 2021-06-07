@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluate News and blogs with NLP based on URL's</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1>Evaluate News Article with meaningCloud NLP API</h1>
+      </header>
+      <main>
+        <section>
+          <form class="" onsubmit="return Client.handleSubmit(event)">
+            <input
+              type="text"
+              placeholder="input correct url for the article to evaluate"
+              id="url"
+            />
+            <input
+              type="submit"
+              value="Evaluate with NLP"
+              id="btn"
+              onsubmit="return Client.handleSubmit(event)"
+              onclick="return Client.handleSubmit(event)"
+            />
+            <div id="result">
+              <div class="agreement"></div>
+              <div class="confidence"></div>
+              <div class="irony"></div>
+              <div class="model"></div>
+              <div class="score_tag"></div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <h5>NLP project for Udacity fend-nanodgree program</h5>
+        <hr />
+      </footer>
+    </div>
+  </body>
+</html>

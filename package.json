@@ -1,0 +1,40 @@
+{
+  "name": "nlp",
+  "version": "1.0.0",
+  "description": "evaluate new & blog article with NLP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server/index.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js"
+  },
+  "author": "Shwan Youssif",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-fetch": "^2.6.1",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "sass-loader": "^12.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-middleware": "^3.7.3",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {
+    "css-minimizer-webpack-plugin": "^3.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "terser-webpack-plugin": "^5.1.3",
+    "workbox-webpack-plugin": "^6.1.5"
+  }
+}
