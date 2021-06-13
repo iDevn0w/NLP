@@ -4,10 +4,10 @@
   "description": "evaluate new & blog article with NLP",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "nodemon src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js"
+    "build-dev": "webpack serve  --config webpack.dev.js --open"
   },
   "author": "Shwan Youssif",
   "license": "ISC",
