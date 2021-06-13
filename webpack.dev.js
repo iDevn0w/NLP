@@ -15,8 +15,10 @@ module.exports = {
   devtool: "source-map",
   stats: "verbose",
   output: {
-    libraryTarget: "var",
-    library: "Client",
+    library: {
+      name: "Client",
+      type: "var",
+    },
   },
   module: {
     rules: [

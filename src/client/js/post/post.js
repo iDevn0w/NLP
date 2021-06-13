@@ -8,7 +8,7 @@ export const postUrlToServer = async (url = "") => {
     },
     body: JSON.stringify({ data: url }),
   };
-  const response = await fetch("http://localhost:5000/api/json", options);
+  const response = await fetch("http://localhost:5001/api/json", options);
   try {
     const data = await response.json();
     return data;
