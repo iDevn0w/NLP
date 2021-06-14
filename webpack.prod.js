@@ -10,6 +10,12 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   stats: "verbose",
+  output: {
+    library: {
+      name: "Client",
+      type: "var",
+    },
+  },
   module: {
     rules: [
       {
